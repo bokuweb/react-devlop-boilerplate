@@ -11,6 +11,7 @@
     "build:lib": "browserify --extension=js -o lib/index.js src/index.js",
     "build:example": "browserify --extension=js -o example/dist/bundle.js example/src/index.js",
     "test": "karma start",
+    "test:watch": "karma start --auto-watch --no-single-run",
     "compile": "babel -d lib/ src/",
     "prepublish": "npm run compile",
     "lint": "eslint src"
